@@ -1,17 +1,19 @@
 <template>
   <div class="container" style="max-width: 600px">
     <!-- Heading -->
-    <h2 class="text-center mt-5">My Vue Todo App</h2>
+    <h2 class="text-center mt-5">CRUD App</h2>
 
     <!-- Input -->
-    <div class="d-flex mt-5">
+    <div class="mt-5 input-group">
       <input
         type="text"
         v-model="task"
         placeholder="Enter task"
-        class="w-100 form-control"
+        class="form-control"
       />
-      <button class="btn btn-warning" @click="submitTask">SUBMIT</button>
+      <div class="input-group-append">
+        <button class="btn btn-outline-info" @click="submitTask">SUBMIT</button>
+      </div>
     </div>
 
     <!-- Task table -->
